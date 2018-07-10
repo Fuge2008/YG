@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_seleprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_noconer"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp" >
+
+        <TextView
+            android:id="@+id/tv_fromlow"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:text="从低到高"
+            android:textColor="@color/sblack"
+            android:textSize="@dimen/px20" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CCCCCC" />
+
+        <TextView
+            android:id="@+id/tv_fromhight"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:text="从高到低"
+            android:textColor="@color/sblack"
+            android:textSize="@dimen/px20" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CCCCCC" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/editext_style2"
+                android:orientation="horizontal"
+                android:padding="2dp" >
+
+                <EditText
+                    android:id="@+id/ed_fromp"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:layout_toLeftOf="@+id/tvf"
+                    android:background="@null"
+                    android:hint="最小值"
+                    android:inputType="numberSigned"
+                    android:singleLine="true"
+                    android:textColor="@color/sblack"
+                    android:textSize="@dimen/px20" />
+
+                <TextView
+                    android:id="@+id/tvf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="元"
+                    android:textColor="@color/sblack"
+                    android:textSize="@dimen/px20" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/editext_style2"
+                android:orientation="horizontal"
+                android:padding="2dp" >
+
+                <EditText
+                    android:id="@+id/ed_endp"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:layout_toLeftOf="@+id/tvff"
+                    android:background="@null"
+                    android:hint="最大值"
+                    android:inputType="numberSigned"
+                    android:singleLine="true"
+                    android:textColor="@color/sblack"
+                    android:textSize="@dimen/px20" />
+
+                <TextView
+                    android:id="@+id/tvff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="元"
+                    android:textColor="@color/sblack"
+                    android:textSize="@dimen/px20" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_sureprice"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/newbtnbg"
+                android:text="确定"
+                android:textColor="@color/sblack"
+                android:textSize="@dimen/px20" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

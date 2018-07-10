@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="8dp" >
+
+    <com.femto.ugershop.view.CircleImageView
+        android:id="@+id/im_head_commends_goods"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/person" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/px10"
+        android:layout_toRightOf="@+id/im_head_commends_goods"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tv_name_commends_goods"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:ellipsize="end"
+                android:maxEms="8"
+                android:singleLine="true"
+                android:text="名字"
+                android:textSize="@dimen/px20" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_time_commends1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px10"
+            android:text="2012-12-12"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/sp10" />
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px10"
+            android:text="评论内容"
+            android:textSize="@dimen/px20" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp05"
+            android:background="@color/postgrey" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_delete_content"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:text="删除"
+        android:visibility="gone" />
+
+</RelativeLayout>

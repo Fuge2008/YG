@@ -1,0 +1,218 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_topcn2"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/topbg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:id="@+id/rl_sreach_nc2"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/newsearch" />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/ed_search_custom2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_margin="2dp"
+            android:layout_toLeftOf="@+id/rl_cole_custon2"
+            android:layout_toRightOf="@+id/rl_sreach_nc2"
+            android:editable="false"
+            android:focusable="false"
+            android:hint="搜索"
+            android:textSize="@dimen/sp14"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/rl_cole_custon2"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="8dp"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/doublecom" />
+        </RelativeLayout>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <RadioButton
+                    android:id="@+id/rb_girl2"
+                    android:layout_width="48dp"
+                    android:layout_height="40dp"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="女"
+                    android:textSize="@dimen/sp18" />
+
+                <TextView
+                    android:id="@+id/tv_girl2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:orientation="vertical" >
+
+                <RadioButton
+                    android:id="@+id/rb_boy2"
+                    android:layout_width="48dp"
+                    android:layout_height="40dp"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="男"
+                    android:textSize="@dimen/sp18" />
+
+                <TextView
+                    android:id="@+id/tv_boy2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/black"
+                    android:visibility="invisible" />
+            </LinearLayout>
+        </RadioGroup>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp05"
+        android:background="@color/topdivision" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/rlayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/rl_show"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/vp_second_pic2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:id="@+id/dots_group_second2"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:orientation="horizontal" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/search022"
+            android:layout_width="match_parent"
+            android:layout_height="40dip"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/rl_topcustomize2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <com.femto.ugershop.tabpage.TabPageIndicator
+                    android:id="@+id/tp_customize2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:background="@color/white" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp05"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/topdivision" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_customize2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_up_mgc2"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_above="@+id/rl_change2"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="8dp"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/im_up_mgc2"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/totop" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_change2"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="8dp"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/im_change2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/doublecom" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,135 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/v_bottom" />
+
+    <View
+        android:id="@+id/v_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp05"
+        android:layout_above="@+id/rg_bottom_main"
+        android:background="@color/bottomdivision" />
+
+    <RadioGroup
+        android:id="@+id/rg_bottom_main"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bottombg"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="5" >
+
+        <RadioButton
+            android:id="@+id/rb_customization"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:drawablePadding="1dp"
+            android:drawableTop="@drawable/nav_customization_check"
+            android:gravity="center"
+            android:text="梦工厂"
+            android:textColor="@color/tab_main_color"
+            android:textSize="@dimen/px15" />
+
+        <RadioButton
+            android:id="@+id/rb_community1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="1dp"
+            android:drawableTop="@drawable/nav_community_check"
+            android:gravity="center"
+            android:text="社区"
+            android:textColor="@color/tab_main_color"
+            android:textSize="@dimen/px15" />
+
+        <ImageView
+            android:id="@+id/im_mflags"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center" />
+
+        <RadioButton
+            android:id="@+id/rb_design_tab"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="1dp"
+            android:drawableTop="@drawable/nav_desigin_check"
+            android:gravity="center"
+            android:text="设计师"
+            android:textColor="@color/tab_main_color"
+            android:textSize="@dimen/px15"
+            android:visibility="gone" />
+
+        <RadioButton
+            android:id="@+id/rb_store"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="1dp"
+            android:drawableTop="@drawable/nav_store_check"
+            android:gravity="center"
+            android:text="消息"
+            android:textColor="@color/tab_main_color"
+            android:textSize="@dimen/px15" />
+
+        <RadioButton
+            android:id="@+id/rb_me"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="1dp"
+            android:drawableTop="@drawable/nav_me_check"
+            android:gravity="center"
+            android:text="我"
+            android:textColor="@color/tab_main_color"
+            android:textSize="@dimen/px15" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/im_newmflags"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginBottom="8dp"
+            android:src="@drawable/middle_camer" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="-16dp"
+            android:text="上图制作"
+            android:textSize="@dimen/px15"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</RelativeLayout>

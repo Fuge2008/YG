@@ -1,0 +1,690 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.femto.ugershop"
+    android:versionCode="7"
+    android:versionName="1.3.3" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 分享 -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <!-- 蓝牙分享所需的权限 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <!-- 分享 -->
+    <!-- 支付宝权限 -->
+    <!-- 支付宝权限 -->
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- 环信权限 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <!-- 环信权限 -->
+    <application
+        android:name="com.femto.ugershop.application.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/newlogyooge"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/Theme.Swipe.Back" >
+        <activity
+            android:name="com.femto.ugershop.activity.SplashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.femto.ugershop.activity.Activity_Designer"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.femto.ugershop.activity.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.PageIndicatorDefaults" />
+        <activity
+            android:name="com.femto.ugershop.activity.Activity_PostDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.femto.ugershop.activity.Activity_GoodsDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.femto.ugershop.activity.Activity_Order"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.femto.ugershop.activity.Activity_Purchase"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|adjustPan" />
+        <activity
+            android:name="com.femto.ugershop.activity.Activity_Account"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.femto.ugershop.activity.Activity_Integraldetail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.femto.ugershop.activity.Activity_OrderMG"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.femto.ugershop.activity.Activity_StorePutaway"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.femto.ugershop.activity.Activity_Account_Statistics"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.femto.ugershop.activity.Activity_BrandApply"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.femto.ugershop.activity.Activity_CustomApply"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.femto.ugershop.activity.Activity_Video"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" />
+        <activity
+            android:name="com.femto.ugershop.activity.Activity_Contacts"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.femto.ugershop.activity.Activity_ConsultCen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.femto.ugershop.activity.Activity_MyCost"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.femto.ugershop.activity.Activity_CustProDetai"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.femto.ugershop.activity.Activity_OtherFee"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.femto.ugershop.activity.Activity_Earnings"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.femto.ugershop.activity.Activity_AllStrorePut"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.femto.ugershop.activity.Activity_UpLoadPost"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.femto.ugershop.activity.Activity_Login"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.femto.ugershop.activity.Activity_LookLogistics"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.femto.ugershop.activity.Activity_Regist"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.femto.ugershop.activity.Activity_PersonData"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.femto.ugershop.activity.Activity_Message"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.femto.ugershop.activity.Activity_Mycollect"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.femto.ugershop.activity.Activity_Prise"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.femto.ugershop.activity.Activity_Comments"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.femto.ugershop.activity.Activity_AtMe"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.femto.ugershop.activity.Activity_GoodUp"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.femto.ugershop.activity.Activity_OrderMG_Custom"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.femto.ugershop.activity.Activity_ReturnOrBack"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.femto.ugershop.activity.Activity_Commends_Store"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.femto.ugershop.activity.Activity_AddtoShopCar"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.femto.ugershop.activity.Activity_ModeCard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.femto.ugershop.activity.Activity_Search"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.femto.ugershop.activity.Activity_MyCouponCode"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.femto.ugershop.activity.Activity_LookPic"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.femto.ugershop.activity.Activity_ShoppingCar"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.femto.ugershop.activity.Activity_Commends_GoodeDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.femto.ugershop.activity.Activity_Customize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.femto.ugershop.activity.Activity_AtMeTongXunlu"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.femto.ugershop.activity.Activity_CommendsCustom"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.femto.ugershop.activity.Activity_OderDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.femto.ugershop.activity.Activity_oderdetails_custom"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.femto.ugershop.activity.Activity_Pro_Custom"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.femto.ugershop.activity.Activity_Pro_design"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.femto.ugershop.activity.Activity_CustomMain"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.femto.ugershop.activity.Activity_Rule"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.femto.ugershop.activity.Activity_SendSample"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.femto.ugershop.activity.Activity_List"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.femto.ugershop.activity.Activity_FilterCloth"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.femto.ugershop.activity.Activity_FindPassWord"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.femto.ugershop.activity.Activity_ActivityMain"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.femto.ugershop.activity.Activity_Address"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.femto.ugershop.activity.Activity_CreatAddress"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.femto.ugershop.activity.Activity_ChangePD"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.femto.ugershop.activity.Activity_Quid"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.femto.ugershop.activity.Activity_CommonModify"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.femto.ugershop.activity.Activity_CommunityFind"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.femto.ugershop.activity.Activity_CommunityFindRank"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.femto.ugershop.activity.Activity_Custom_Rule"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.femto.ugershop.activity.Activity_FocusMe"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.femto.ugershop.activity.Activity_FansNub"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.femto.ugershop.activity.Activity_CreatQcode"
+            android:screenOrientation="portrait" />
+        <!-- 头条详情 -->
+        <activity
+            android:name="com.femto.ugershop.activity.Activity_Head"
+            android:screenOrientation="portrait" />
+        <!-- 头条详情 -->
+        <activity
+            android:name="com.femto.ugershop.activity.Activity_NewDZ"
+            android:screenOrientation="portrait" />
+        <!-- 定制商品详情 -->
+        <activity
+            android:name="com.femto.ugershop.activity.Activity_CustomGoodsDetails"
+            android:screenOrientation="portrait" />
+        <!-- 添加标签 -->
+        <activity
+            android:name="com.femto.ugershop.activity.ActivityAddTags"
+            android:screenOrientation="portrait" />
+        <!-- 搜索定制商品 -->
+        <activity
+            android:name="com.femto.ugershop.activity.Activity_Search_Custom"
+            android:screenOrientation="portrait" />
+        <!-- 搜索定制商品 -->
+        <activity
+            android:name="com.femto.ugershop.activity.Activity_MyCustom"
+            android:screenOrientation="portrait" />
+        <!-- 我的优惠券 -->
+        <activity
+            android:name="com.femto.ugershop.activity.Activity_MyCoupon"
+            android:screenOrientation="portrait" />
+        <!-- 兑换优惠码 -->
+        <activity
+            android:name="com.femto.ugershop.activity.Activity_CouponCode"
+            android:screenOrientation="portrait" />
+        <!-- 收藏定制商品 -->
+        <activity
+            android:name="com.femto.ugershop.activity.Activity_MyCollectCustomGoods"
+            android:screenOrientation="portrait" />
+        <!-- 收藏定制商品 -->
+        <activity
+            android:name="com.femto.ugershop.activity.Ativity_GetMoney"
+            android:screenOrientation="portrait" />
+        <!-- 发送标签 -->
+        <activity
+            android:name="com.femto.ugershop.activity.Activity_Send_Flags"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <!-- 分享 -->
+        <activity
+            android:name="com.femto.ugershop.selepic.ImgFileListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.femto.ugershop.selepic.ImgsActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 微信分享回调 -->
+        <activity
+            android:name="com.femto.ugershop.wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- 易信分享回调 -->
+        <activity
+            android:name=".yxapi.YXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+            <intent-filter>
+                <data android:scheme="tencent100371282" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- 支付宝 -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" >
+        </activity>
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" >
+        </activity>
+        <!-- 支付宝 -->
+        <!-- 微信支付 -->
+        <receiver android:name="com.femto.ugershop.weixinpay.AppRegister" >
+            <intent-filter>
+                <action android:name="com.tencent.mm.plugin.openapi.Intent.ACTION_REFRESH_WXAPP" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.femto.ugershop.activity.Activity_SelectPay"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="wxad038395edb5bba3" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.femto.ugershop.wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop" />
+        <!-- 微信支付 -->
+
+
+        <!-- 环信 -->
+
+
+        <!-- 设置环信应用的appkey -->
+        <meta-data
+            android:name="EASEMOB_APPKEY"
+            android:value="yoogeee#yooge" />
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="HEKouZseGSNBxYtM9NiS9Wup" />
+        <!-- 声明sdk所需的service -->
+        <service
+            android:name="com.easemob.chat.EMChatService"
+            android:exported="true" />
+        <!-- 声明sdk所需的receiver -->
+        <receiver android:name="com.easemob.chat.EMMonitorReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+        <!-- 百度地图 -->
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+
+        <!-- 环信 -->
+        <!-- 环信Activity -->
+        <!-- 聊天页面 -->
+        <activity
+            android:name="com.easemob.chatuidemo.activity.ChatActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <!-- 添加好友 -->
+        <activity
+            android:name="com.easemob.chatuidemo.activity.AddContactActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="stateVisible" >
+        </activity>
+        <!-- 群组详情 -->
+        <activity
+            android:name="com.easemob.chatuidemo.activity.GroupDetailsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+        <!-- 群组列表 -->
+        <activity
+            android:name="com.easemob.chatuidemo.activity.GroupsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.easemob.chatuidemo.activity.ChatRoomActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <!-- 聊天室详情 -->
+        <activity
+            android:name="com.easemob.chatuidemo.activity.ChatRoomDetailsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+
+        <!-- 新建群组 -->
+        <activity
+            android:name="com.easemob.chatuidemo.activity.NewGroupActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <!-- 退出群组提示框 -->
+        <activity
+            android:name="com.easemob.chatuidemo.activity.ExitGroupDialog"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDialogStyleBottom" >
+        </activity>
+        <!-- 群组选人 -->
+        <activity
+            android:name="com.easemob.chatuidemo.activity.GroupPickContactsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <!-- 地图 -->
+        <activity
+            android:name="com.easemob.chatuidemo.activity.BaiduMapActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+
+        <!-- 新的朋友邀请消息页面 -->
+        <activity
+            android:name="com.easemob.chatuidemo.activity.NewFriendsMsgActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+        <!-- 转发消息用户列表页面 -->
+        <activity
+            android:name="com.easemob.chatuidemo.activity.ForwardMessageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <!-- 自定义的contextmenu -->
+        <activity
+            android:name="com.easemob.chatuidemo.activity.ContextMenu"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDialogStyle" >
+        </activity>
+        <!-- 自定义的alertdialog -->
+        <activity
+            android:name="com.easemob.chatuidemo.activity.AlertDialog"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDialogStyle" >
+        </activity>
+        <!-- 显示下载大图页面 -->
+        <activity
+            android:name="com.easemob.chatuidemo.activity.ShowBigImage"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+        <!-- 下载文件 -->
+        <activity
+            android:name="com.easemob.chatuidemo.activity.ShowNormalFileActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+        <!-- 黑名单 -->
+        <activity
+            android:name="com.easemob.chatuidemo.activity.BlacklistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+
+        <!-- 公开的群聊列表 -->
+        <activity
+            android:name="com.easemob.chatuidemo.activity.PublicGroupsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.easemob.chatuidemo.activity.PublicChatRoomsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+
+        <!-- 语音通话 -->
+        <activity
+            android:name="com.easemob.chatuidemo.activity.VoiceCallActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/nornal_style" >
+        </activity>
+        <!-- 视频通话 -->
+        <activity
+            android:name="com.easemob.chatuidemo.activity.VideoCallActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+        <!-- 群聊简单信息 -->
+        <activity
+            android:name="com.easemob.chatuidemo.activity.GroupSimpleDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+        <!-- 群组黑名单用户列表 -->
+        <activity
+            android:name="com.easemob.chatuidemo.activity.GroupBlacklistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+        <activity
+            android:name="com.easemob.chatuidemo.activity.PublicGroupsSeachActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+        <activity
+            android:name="com.easemob.chatuidemo.activity.EditActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="stateVisible" >
+        </activity>
+        <activity
+            android:name="com.easemob.chatuidemo.activity.ShowVideoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <!-- choose video -->
+        <activity
+            android:name="com.easemob.chatuidemo.activity.ImageGridActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.easemob.chatuidemo.activity.RecorderVideoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <!-- upload error log -->
+        <activity
+            android:name="com.easemob.chatuidemo.activity.DiagnoseActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+
+        <!-- iOS offline push nick -->
+        <activity
+            android:name="com.easemob.chatuidemo.activity.OfflinePushNickActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <!-- robots list -->
+        <activity
+            android:name="com.easemob.chatuidemo.activity.RobotsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+
+        <!-- 环信Activity -->
+        <!-- 爱奇艺 -->
+        <meta-data
+            android:name="APPKEY"
+            android:value="02eac208c3b94c188237ddd1a75b93ca" >
+        </meta-data>
+        <meta-data
+            android:name="APPSECRET"
+            android:value="860e5bb5de52ae67fa6495ba38525b5f" >
+        </meta-data>
+        <meta-data
+            android:name="managerUrl"
+            android:value="http://openapi.iqiyi.com" >
+        </meta-data>
+        <meta-data
+            android:name="uploadUrl"
+            android:value="http://qichuan.iqiyi.com" >
+        </meta-data>
+        <!-- 爱奇艺 -->
+        <meta-data
+            android:name="com.inthecheesefactory.lab.glidepicasso.GlideConfiguration"
+            android:value="GlideModule" />
+        <!-- umeng统计 -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="567778e867e58e4a6c00226e" >
+        </meta-data>
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="yingyongbao2" />
+        <!-- umeng统计 -->
+
+
+        <!-- 第三方登录 ,Umeng自动更新 -->
+        <activity
+            android:name="cn.sharesdk.framework.ShareSDKUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <service
+            android:name="com.umeng.update.net.DownloadingService"
+            android:process=":DownloadingService" >
+        </service>
+
+        <activity
+            android:name="com.umeng.update.UpdateDialogActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <!-- 第三方登录 -->
+        <!-- 下载服务 -->
+        <service android:name="com.femto.ugershop.service.DownLoadService" >
+        </service>
+    </application>
+
+</manifest>

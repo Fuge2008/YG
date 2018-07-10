@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="8dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="订单单价:"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/ed_danjia"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/image_bg"
+            android:hint="输入单价"
+            android:inputType="numberSigned"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="8dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="数量:"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/ed_count_oder"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/image_bg"
+            android:hint="输入数量"
+            android:inputType="numberSigned"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</LinearLayout>

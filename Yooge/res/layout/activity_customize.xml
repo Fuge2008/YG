@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_rop_c"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/backgrey" >
+
+        <RelativeLayout
+            android:id="@+id/rl_back_c"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_centerVertical="true" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/arrows_left" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="定制"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp05"
+        android:layout_above="@+id/sl_modecar"
+        android:background="@color/topdivision" />
+
+    <ScrollView
+        android:id="@+id/sl_modecar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rl_sure_dingzhi"
+        android:layout_below="@+id/rl_rop_c"
+        android:background="@color/white" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:text="定制类别" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="#DDDAD6" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="设计费用：（不包括制作费用，请与设计师沟通后，在制作阶段支付制作费用）" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#DDDAD6" />
+
+            <com.femto.ugershop.view.MyGridView
+                android:id="@+id/gv_type_custom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:numColumns="3"
+                android:padding="8dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="80dp"
+                android:background="#DDDAD6" />
+
+            <RelativeLayout
+                android:id="@+id/ll_check_mode1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:padding="16dp" >
+
+                <ImageView
+                    android:id="@+id/im_newmode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/bigmode" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_toRightOf="@+id/im_newmode"
+                    android:text="修改模特卡"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/arrrightrule" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#DDDAD6" />
+
+            <com.femto.ugershop.view.MyGridView
+                android:id="@+id/gv_mode_custom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="3"
+                android:padding="8dp"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:padding="16dp"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="数量:" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/im_reduce_c"
+                        android:layout_width="56dp"
+                        android:layout_height="56dp"
+                        android:src="@drawable/reduce" />
+
+                    <EditText
+                        android:id="@+id/ed_count_c"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/editext_style2"
+                        android:gravity="center"
+                        android:inputType="numberSigned"
+                        android:text="1" />
+
+                    <ImageView
+                        android:id="@+id/im_count_c"
+                        android:layout_width="56dp"
+                        android:layout_height="56dp"
+                        android:src="@drawable/addcount" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:orientation="horizontal" >
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="2dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="3"
+                    android:background="#9A969E" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="定制流程" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="2dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="3"
+                    android:background="#9A969E" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                android:text="
+1.	利用定制频道的筛选工具选定合适的设计师。\n
+2.	向意向设计师发送模特卡。\n
+3.	与意向设计师沟通，如果满意的话可以提交设计订单，不满意的话可以重新选择设计师。\n
+4.	确定设计订单后，付款至优格平台，设计师开始设计工作。\n
+5.	顾客对设计成果进行确认，如果满意，可以确认由设计师发起的生产订单，如果不满意，可以要求设计师免费修改3次，如3次之后还不满意，优格将退回定制费用的50%。\n
+6.	确认设计师发起的生产定单后付款至优格平台，等待成衣到货后确认收货。\n
+7.	收到成衣后不满意可以免费修改一次。\n
+8.	确认收货后可以对本次定制的服装进行评价，评价后可以上传产品图片获得积分，客户有权选择不公开定制产品图片，以保证定制产品的唯一性。
+"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp05"
+        android:layout_above="@+id/rl_sure_dingzhi"
+        android:background="@color/bottomdivision" />
+
+    <RelativeLayout
+        android:id="@+id/rl_sure_dingzhi"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bottombg" >
+
+        <TextView
+            android:id="@+id/tv_sure_dingzhi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/newbtnbg"
+            android:gravity="center"
+            android:text="确定"
+            android:textSize="@dimen/px20" />
+    </RelativeLayout>
+
+</RelativeLayout>

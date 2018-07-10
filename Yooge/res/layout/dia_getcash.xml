@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_margin="8dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="5"
+            android:text="支付宝账号:"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/ed_zfbcount"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/image_bg"
+            android:hint="支付宝账号"
+            android:singleLine="true"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_margin="8dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="5"
+            android:text="手机号码:"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/ed_phonenub"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/image_bg"
+            android:hint="手机号码"
+            android:inputType="phone"
+            android:maxEms="11"
+            android:singleLine="true"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="优格将在3-5个工作日打款到您账上!"
+        android:textColor="@color/sblack"
+        android:textSize="10sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="届时优格客服跟您联系!"
+        android:textColor="@color/sblack"
+        android:textSize="10sp" />
+
+</LinearLayout>

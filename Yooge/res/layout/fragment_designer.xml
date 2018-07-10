@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/topbg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/rl_sreach_new"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/newsearch"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/yoogenew" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_menu_new"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/newshopcar"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <RadioGroup
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:weightSum="5" >
+
+            <RadioButton
+                android:id="@+id/rb_book"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="预定数"
+                android:textColor="@color/newgoods_rb_selector"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/rb_hot"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:button="@null"
+                android:gravity="center"
+                android:text="热度"
+                android:textColor="@color/newgoods_rb_selector"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/rb_time"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:button="@null"
+                android:gravity="center"
+                android:text="时间"
+                android:textColor="@color/newgoods_rb_selector"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/rb_grade"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:button="@null"
+                android:gravity="center"
+                android:text="等级"
+                android:textColor="@color/newgoods_rb_selector"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/rb_price"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:button="@null"
+                android:gravity="center"
+                android:text="价格"
+                android:textColor="@color/newgoods_rb_selector"
+                android:textSize="14sp" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp05"
+        android:background="@color/topdivision" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:weightSum="5" >
+
+        <RadioButton
+            android:id="@+id/rb_inland"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="国内"
+            android:textColor="@color/newgoods_rb_selector"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/rb_japan"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="日韩"
+            android:textColor="@color/newgoods_rb_selector"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/rb_styte"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="风格"
+            android:textColor="@color/newgoods_rb_selector"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/rb_rank"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="等级"
+            android:textColor="@color/newgoods_rb_selector"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/rb_hotd"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="热度"
+            android:textColor="@color/newgoods_rb_selector"
+            android:textSize="14sp" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <com.huewu.pla.lib.MultiColumnListView
+            xmlns:pla="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/gv_hot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:cacheColorHint="#000000"
+            android:listSelector="#000000"
+            pla:plaColumnNumber="2"
+            pla:plaColumnPaddingLeft="@dimen/px8"
+            pla:plaColumnPaddingRight="@dimen/px8"
+            pla:plaLandscapeColumnNumber="2" >
+        </com.huewu.pla.lib.MultiColumnListView>
+
+        <TextView
+            android:id="@+id/tv_clicktomore_de"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:gravity="center"
+            android:text="加载中..."
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

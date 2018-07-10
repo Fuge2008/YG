@@ -1,0 +1,51 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="height_top_bar">46dp</dimen>
+    <dimen name="padding_search_bar">5dp</dimen>
+    <dimen name="height_row_weixin">59dp</dimen>
+    <dimen name="size_avatar">50dp</dimen>
+    <dimen name="margin_chat_activity">5dp</dimen>
+    <dimen name="field_textsize">14sp</dimen>
+    <dimen name="field_margin_right">5dp</dimen>
+    <dimen name="call_button_padding_vertical">10dp</dimen>
+    <dimen name="call_button_padding_left">25dp</dimen>
+    <dimen name="call_button_padding_right">25dp</dimen>
+    <dimen name="sidebar_text_size">10dp</dimen>
+    <dimen name="image_thumbnail_size">100dp</dimen>
+    <dimen name="image_thumbnail_spacing">1dp</dimen>
+    <dimen name="indicator_right_padding">10dp</dimen>
+    <dimen name="indicator_corner_radius">12dp</dimen>
+    <dimen name="indicator_internal_padding">4dp</dimen>
+    <dimen name="header_footer_left_right_padding">24dp</dimen>
+    <dimen name="header_footer_top_bottom_padding">12dp</dimen>
+    <dimen name="px5">3.8333dp</dimen>
+    <dimen name="dp05">0.5dp</dimen>
+    <dimen name="px10">7.1667dp</dimen>
+    <dimen name="px15">10.5dp</dimen>
+    <dimen name="px22">15.1667dp</dimen>
+    <dimen name="px25">17.1667dp</dimen>
+    <dimen name="px20">13.8333dp</dimen>
+    <dimen name="px24">16.5dp</dimen>
+    <dimen name="px80">53.8333dp</dimen>
+    <dimen name="px50">33.8333dp</dimen>
+    <dimen name="px28">19.1667dp</dimen>
+    <dimen name="px40">27.1667dp</dimen>
+    <dimen name="px8">5.8333dp</dimen>
+    <dimen name="px36">24.5dp</dimen>
+    <dimen name="px16">11.1667dp</dimen>
+    <dimen name="px34">23.1667dp</dimen>
+    <dimen name="px45">30.5dp</dimen>
+    <dimen name="px26">17.8333dp</dimen>
+    <dimen name="px21">14.5dp</dimen>
+    <dimen name="sp14">14sp</dimen>
+    <dimen name="sp12">12sp</dimen>
+    <dimen name="sp10">10sp</dimen>
+    <dimen name="sp8">8sp</dimen>
+    <dimen name="sp16">16sp</dimen>
+    <dimen name="sp18">18sp</dimen>
+    <dimen name="dp8">8dp</dimen>
+
+</resources>

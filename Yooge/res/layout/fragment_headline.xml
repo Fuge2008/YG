@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgrey"
+    android:orientation="vertical" >
+
+    <com.femto.ugershop.tabpage.TabPageIndicator
+        android:id="@+id/tp"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:background="@color/white" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp05"
+        android:background="@color/topdivision" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_head"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white" />
+
+</LinearLayout>

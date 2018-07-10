@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_toppost"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/topbg" >
+
+        <RelativeLayout
+            android:id="@+id/rl_back_postdetails"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_centerVertical="true" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/arrows_left" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_title_postd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:singleLine="true"
+            android:text="帖子详情"
+            android:textColor="@color/sblack"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp05"
+        android:layout_below="@+id/rl_toppost"
+        android:background="@color/topdivision" />
+
+    <ScrollView
+        android:id="@+id/sv_postdetails"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_commends"
+        android:layout_below="@+id/rl_toppost"
+        android:layout_marginTop="@dimen/dp05"
+        android:background="@color/sgray" >
+
+        <LinearLayout
+            android:id="@+id/ll_sv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <com.femto.ugershop.view.CircleImageView
+                        android:id="@+id/im_head_postd"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/tv_name_postd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="飞翔系列"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_collectdetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dp" >
+
+                    <TextView
+                        android:id="@+id/tv_iscollect_postd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/image_bg"
+                        android:paddingBottom="4dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:paddingTop="4dp"
+                        android:text="收藏"
+                        android:textColor="@color/sblack"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp05"
+                android:background="@color/postgrey" />
+
+            <TextView
+                android:id="@+id/tv_msg_post"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                android:lineSpacingExtra="8dp"
+                android:textColor="#595959"
+                android:textSize="14sp" />
+
+            <com.femto.ugershop.view.MyGridView
+                android:id="@+id/gv_pic_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="3"
+                android:padding="16dp" />
+
+            <TextView
+                android:id="@+id/tv_time_postd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="2015-09-23"
+                android:textColor="@color/sblack"
+                android:textSize="12sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp05"
+                android:layout_marginTop="16dp"
+                android:background="@color/postgrey" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="3" >
+
+                <RelativeLayout
+                    android:id="@+id/rl_sharepost"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/tv_share_postd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/postshare"
+                        android:gravity="center"
+                        android:text="20"
+                        android:textColor="@color/sblack"
+                        android:textSize="10sp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="@dimen/dp05"
+                    android:layout_height="24dp"
+                    android:background="@color/postgrey" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_comment"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/tv_comment_postd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/postcommends"
+                        android:gravity="center"
+                        android:text="20"
+                        android:textColor="@color/sblack"
+                        android:textSize="10sp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="@dimen/dp05"
+                    android:layout_height="24dp"
+                    android:background="@color/postgrey" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_praise"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/tv_prise_postd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/newpostheart"
+                        android:gravity="center"
+                        android:text="20"
+                        android:textColor="@color/sblack"
+                        android:textSize="10sp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="@dimen/dp05"
+                    android:layout_height="24dp"
+                    android:background="@color/postgrey" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_chart"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/tv_chat_post"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/chat_small"
+                        android:gravity="center" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp05"
+                android:background="@color/postgrey" />
+
+            <com.femto.ugershop.view.ScrollViewWithListView
+                android:id="@+id/lv_comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@color/backgrey" />
+
+            <TextView
+                android:id="@+id/tv_clicktomore"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:gravity="center"
+                android:text="点击加载更多"
+                android:visibility="gone" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/ll_commends"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/im_at"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="4dp"
+            android:src="@drawable/at" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <EditText
+                android:id="@+id/ed_commendpost"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_toLeftOf="@+id/tv_sendcommends"
+                android:background="@drawable/image_bg"
+                android:hint="我也说一句"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_sendcommends"
+                android:layout_width="48dp"
+                android:layout_height="32dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="4dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/ed_send_bg"
+                android:gravity="center"
+                android:text="发送" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>
